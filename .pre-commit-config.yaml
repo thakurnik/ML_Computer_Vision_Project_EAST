@@ -9,13 +9,6 @@ repos:
             dist  |
             projectmlincvmediapipe.egg-info |
             __pycache__
-    -   id: trailing-whitespace
-        exclude:
-            asset |
-            build |
-            dist  |
-            projectmlincvmediapipe.egg-info |
-            __pycache__
 -   repo: https://github.com/psf/black
     rev: 21.12b0
     hooks:
