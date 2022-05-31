@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 Run apt-get update
 RUN apt-get install -y --no-install-recommends build-essential  \
      python3.9 python3-pip python3.9-venv python3.9-dev   
-Run apt-get install -y --fix-missing ffmpeglibsm6 libxext6
+Run apt-get install -y --fix-missing ffmpeg libsm6 libxext6
 
 RUN rm -rf /var/cache/apt/archives \
     && rm -rf /var/lib/apt/lists
