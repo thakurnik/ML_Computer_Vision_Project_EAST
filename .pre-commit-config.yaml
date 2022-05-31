@@ -7,7 +7,7 @@ repos:
             asset |
             build |
             dist  |
-            projectmlincvmediapipe.egg-info |
+            EAST_TEXT_DETECTOR.egg-info |
             __pycache__
 -   repo: https://github.com/psf/black
     rev: 21.12b0
@@ -18,7 +18,7 @@ repos:
             asset |
             build |
             dist  |
-            projectmlincvmediapipe.egg-info |
+            EAST_TEXT_DETECTOR.egg-info |
             __pycache__
 -   repo: https://github.com/pre-commit/mirrors-isort
     rev: 1ba6bfc # Use the revision sha / tag you want to point at
@@ -29,7 +29,7 @@ repos:
             asset |
             build |
             dist  |
-            projectmlincvmediapipe.egg-info |
+            EAST_TEXT_DETECTOR.egg-info |
             __pycache__
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 3.9.2
@@ -40,5 +40,5 @@ repos:
             asset |
             build |
             dist  |
-            projectmlincvmediapipe.egg-info |
+            EAST_TEXT_DETECTOR.egg-info |
             __pycache__
