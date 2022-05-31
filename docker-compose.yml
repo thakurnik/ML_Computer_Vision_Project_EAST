@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ML_Computer_Vision_EAST:
+    image: ML_Computer_Vision_EAST
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  ML_Computer_Vision_EAST:
+    image: ML_Computer_Vision_EAST
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 streamlitapp\app.py "]
+    ports:
+      - 5678:5678
