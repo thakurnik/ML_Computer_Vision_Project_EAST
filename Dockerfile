@@ -13,7 +13,7 @@ RUN rm -rf /var/cache/apt/archives \
     && rm -rf /var/lib/apt/lists
 
 
-Run python -m pip install --upgrade pip && python3 -m pip install build
+Run python3 -m pip install --upgrade pip && python3 -m pip install build
 
 COPY dist/EAST_TEXT_DETECTOR-1.0.0-py3-none-any.whl ./
 RUN python3 -m pip install EAST_TEXT_DETECTOR-1.0.0-py3-none-any.whl
