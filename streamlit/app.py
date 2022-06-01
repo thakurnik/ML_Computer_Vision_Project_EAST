@@ -4,7 +4,7 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 
-from projectmlincvmediapipe import demo
+from EAST import east_text_detection
 
 st.title("Welcome to my demo web app")
 st.write(
