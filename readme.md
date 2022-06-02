@@ -101,7 +101,8 @@ To prevent a branch from being merged to master with failed tests, go to your re
 Requirements for this is to create a workflow on github for which you can go to Actions -> New Workflow and select Docker Image workflow.
  
 You also need to set up a Dockerfile and .Dcokerignore file.
-For this project it is set up but failing for creating a docker image as the dist folder which has the .whl file is ignored in the .Dockerignore file which is the location for the copy.
+for creating a docker image as the dist folder which has the .whl file is ignored in the .Dockerignore file which is the location for the copy.
+So you have to remove the dist or sdist folder from the ignore file if it is present
  
 # Task 3. Web-Demo
 To set up a webdemo you need to install the streamlit package with the command :
