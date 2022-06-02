@@ -91,8 +91,29 @@ pip install pytest
 To use pytest in your local machine you have to install the tar.gz file locted in /dist folder in the repo
 and type demo to run the script
 
-This particular script has errors so it is not running, shown below
-![image](https://user-images.githubusercontent.com/22669538/170729257-b0d09ee8-1668-4d80-9853-dc8bea529f37.png)
+# To setup a CI Pipeline on github
+ 
+ 
+CI has already been set up. It will run the tests and style checks and will build a new version of the package every time you push a new commit on any branch or make a pull request. Do not forget to pull the repository after a package is successfully built since it will differ from the one you commited.
+ 
+To prevent a branch from being merged to master with failed tests, go to your repository, then Settings->Branches->Add rule. The most important setting to turn on is Require status checks to pass before merging. 
+ 
+Requirements for this is to create a workflow on github for which you can go to Actions -> New Workflow and select Docker Image workflow.
+ 
+You also need to set up a Dockerfile and .Dcokerignore file.
+For this project it is set up but failing for creating a docker image as the dist folder which has the .whl file is ignored in the .Dockerignore file which is the location for the copy.
+ 
+# Task 3. Web-Demo
+To set up a webdemo you need to install the streamlit package with the command :
+ 
+pip install steamlit
+ 
+To run a web demo :
+change to the directory where streamlit is located for example cd streamlit and then run command:
+Streamlit run app.py
+ 
+For this you have to create a python file app.py which includes a file uploader and a call for running the demo
+
 
 
 
