@@ -110,11 +110,13 @@ To set up a webdemo you need to install the streamlit package with the command :
 pip install steamlit
  
 To run a web demo :
-change to the directory where streamlit is located for example cd streamlit and then run command:
-Streamlit run app.py
+change the directory to where the east_text_detection.py file is located and give the command 
+**python -m streamlit run east_text_detection.py -- image --imaegs/robert.jpeg --east frozen_east_text_detection.pb**
+
+
+**Note - you can replace the robert.jpeg with other image name and correct format and it should be located in images folder for the argument to work**
  
 For this you have to create a python file app.py which includes a file uploader and a call for running the demo
-
 
 
 
